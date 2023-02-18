@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/app",
+    "sourceMap": false
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts",
+    "../../node_modules",
+    "../../dist-rollup"
+  ]
+}
