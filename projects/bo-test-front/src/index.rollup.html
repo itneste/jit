@@ -1,0 +1,36 @@
+<!doctype html>
+    <html>
+    <head lang="en">
+        <base href=""/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="icon" type="image/png" href="/favicon.png">
+        <link rel="stylesheet" href="/platform/common/web/assets/material-icons/material-icons.css"/>
+        <link rel="stylesheet" href="/platform/common/web/assets/farris-all.css"/>
+        <title>jit auto generated</title>
+    </head>
+    <body>
+        
+        <app-root></app-root>
+        <script>
+            var body = document.getElementsByTagName('body')[0];
+            var script = document.createElement('script');
+            script.type = 'systemjs-importmap';
+            script.src = '/platform/runtime/common/web/runtime.common.manifest.json?v=' + new Date().getTime();
+            body.appendChild(script);
+        </script>
+        <script src="/platform/runtime/common/web/gsprtf/gsp.rtf.core.js"></script>
+        <script>
+            var body = document.getElementsByTagName('body')[0];
+            var script = document.createElement('script');
+            script.setAttribute("type", "text/javascript");
+            script.setAttribute("src", '/platform/common/web/polyfills.js?v=' + new Date().getTime());
+            script.onload = function () {
+                System.import('./main.js');
+            };
+            body.appendChild(script);
+        </script>
+        <script src="/platform/common/web/reflect.js"></script>
+        
+    </body>
+</html>

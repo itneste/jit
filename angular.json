@@ -3,9 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bo-robxdjfront": {
-      "root": "projects/bo-robxdjfront/",
-      "sourceRoot": "projects/bo-robxdjfront/src",
+    "bo-test-front": {
+      "root": "projects/bo-test-front/",
+      "sourceRoot": "projects/bo-test-front/src",
       "projectType": "application",
       "prefix": "app",
       "schematics": {
@@ -18,61 +18,26 @@
           "builder": "@farris/farris-rollup:build",
           "options": {
             "format": "system",
-            "outputPath": "dist-rollup/bo-robxdjfront",
-            "ngcOut": "out-tsc/app/projects/bo-robxdjfront",
+            "outputPath": "dist-rollup/bo-test-front",
+            "ngcOut": "out-tsc/app/projects/bo-test-front",
             "excludeNgFactory": true,
-            "index": "projects/bo-robxdjfront/src/index.rollup.html",
-            "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1648028935963",
-            "tsConfig": "projects/bo-robxdjfront/tsconfig.app.json",
+            "index": "projects/bo-test-front/src/index.rollup.html",
+            "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1677050505982",
+            "tsConfig": "projects/bo-test-front/tsconfig.app.json",
             "entry": {
               "main": {
                 "entry": "src/main.js",
                 "sourceMaps": false
               },
-              "expensebill": {
-                "entry": "src/app/expensebill/expensebill.module.ngfactory.js",
+              "testcardform": {
+                "entry": "src/app/testcardform/testcardform.module.ngfactory.js",
                 "sourceMaps": false,
-                "output": "expensebill"
+                "output": "testcardform"
               },
-              "expenselist": {
-                "entry": "src/app/expenselist/expenselist.module.ngfactory.js",
+              "list": {
+                "entry": "src/app/list/list.module.ngfactory.js",
                 "sourceMaps": false,
-                "output": "expenselist"
-              },
-              "bxed": {
-                "entry": "src/app/bxed/bxed.module.ngfactory.js",
-                "sourceMaps": false,
-                "output": "bxed"
-              },
-              "baoxiaodanchaxun": {
-                "entry": "src/app/baoxiaodanchaxun/baoxiaodanchaxun.module.ngfactory.js",
-                "sourceMaps": false,
-                "output": "baoxiaodanchaxun"
-              },
-              "bejiandancx": {
-                "entry": "src/app/bejiandancx/bejiandancx.module.ngfactory.js",
-                "sourceMaps": false,
-                "output": "bejiandancx"
-              },
-              "bxdzdycx": {
-                "entry": "src/app/bxdzdycx/bxdzdycx.module.ngfactory.js",
-                "sourceMaps": false,
-                "output": "bxdzdycx"
-              },
-              "searchhome": {
-                "entry": "src/app/searchhome/searchhome.module.ngfactory.js",
-                "sourceMaps": false,
-                "output": "searchhome"
-              },
-              "searchhomequeryresult": {
-                "entry": "src/app/searchhomequeryresult/searchhomequeryresult.module.ngfactory.js",
-                "sourceMaps": false,
-                "output": "searchhomequeryresult"
-              },
-              "searchresult": {
-                "entry": "src/app/searchresult/searchresult.module.ngfactory.js",
-                "sourceMaps": false,
-                "output": "searchresult"
+                "output": "list"
               }
             },
             "uglify": false,
@@ -80,51 +45,23 @@
             "libs": {},
             "serve": false,
             "visualize": false,
-            "libsPath": "/projects/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
-            "linkedNodeModules": "/projects/node_modules",
+            "libsPath": "D:/projects/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+            "linkedNodeModules": "D:/projects/node_modules",
             "assets": [],
             "i18n": {
-              "projects/bo-robxdjfront/src/app/expensebill/i18n": "dist-rollup/bo-robxdjfront/expensebill/i18n",
-              "projects/bo-robxdjfront/src/app/expensebill/expressions": "dist-rollup/bo-robxdjfront/expensebill/expressions",
-              "projects/bo-robxdjfront/src/app/expensebill/metadata": "dist-rollup/bo-robxdjfront/expensebill",
-              "projects/bo-robxdjfront/src/app/expensebill/services/dist-rollup": "dist-rollup/bo-robxdjfront/expensebill/services",
-              "projects/bo-robxdjfront/src/app/expenselist/i18n": "dist-rollup/bo-robxdjfront/expenselist/i18n",
-              "projects/bo-robxdjfront/src/app/expenselist/expressions": "dist-rollup/bo-robxdjfront/expenselist/expressions",
-              "projects/bo-robxdjfront/src/app/expenselist/metadata": "dist-rollup/bo-robxdjfront/expenselist",
-              "projects/bo-robxdjfront/src/app/expenselist/services/dist-rollup": "dist-rollup/bo-robxdjfront/expenselist/services",
-              "projects/bo-robxdjfront/src/app/bxed/i18n": "dist-rollup/bo-robxdjfront/bxed/i18n",
-              "projects/bo-robxdjfront/src/app/bxed/expressions": "dist-rollup/bo-robxdjfront/bxed/expressions",
-              "projects/bo-robxdjfront/src/app/bxed/metadata": "dist-rollup/bo-robxdjfront/bxed",
-              "projects/bo-robxdjfront/src/app/bxed/services/dist-rollup": "dist-rollup/bo-robxdjfront/bxed/services",
-              "projects/bo-robxdjfront/src/app/baoxiaodanchaxun/i18n": "dist-rollup/bo-robxdjfront/baoxiaodanchaxun/i18n",
-              "projects/bo-robxdjfront/src/app/baoxiaodanchaxun/expressions": "dist-rollup/bo-robxdjfront/baoxiaodanchaxun/expressions",
-              "projects/bo-robxdjfront/src/app/baoxiaodanchaxun/metadata": "dist-rollup/bo-robxdjfront/baoxiaodanchaxun",
-              "projects/bo-robxdjfront/src/app/baoxiaodanchaxun/services/dist-rollup": "dist-rollup/bo-robxdjfront/baoxiaodanchaxun/services",
-              "projects/bo-robxdjfront/src/app/bejiandancx/i18n": "dist-rollup/bo-robxdjfront/bejiandancx/i18n",
-              "projects/bo-robxdjfront/src/app/bejiandancx/expressions": "dist-rollup/bo-robxdjfront/bejiandancx/expressions",
-              "projects/bo-robxdjfront/src/app/bejiandancx/metadata": "dist-rollup/bo-robxdjfront/bejiandancx",
-              "projects/bo-robxdjfront/src/app/bejiandancx/services/dist-rollup": "dist-rollup/bo-robxdjfront/bejiandancx/services",
-              "projects/bo-robxdjfront/src/app/bxdzdycx/i18n": "dist-rollup/bo-robxdjfront/bxdzdycx/i18n",
-              "projects/bo-robxdjfront/src/app/bxdzdycx/expressions": "dist-rollup/bo-robxdjfront/bxdzdycx/expressions",
-              "projects/bo-robxdjfront/src/app/bxdzdycx/metadata": "dist-rollup/bo-robxdjfront/bxdzdycx",
-              "projects/bo-robxdjfront/src/app/bxdzdycx/services/dist-rollup": "dist-rollup/bo-robxdjfront/bxdzdycx/services",
-              "projects/bo-robxdjfront/src/app/searchhome/i18n": "dist-rollup/bo-robxdjfront/searchhome/i18n",
-              "projects/bo-robxdjfront/src/app/searchhome/expressions": "dist-rollup/bo-robxdjfront/searchhome/expressions",
-              "projects/bo-robxdjfront/src/app/searchhome/metadata": "dist-rollup/bo-robxdjfront/searchhome",
-              "projects/bo-robxdjfront/src/app/searchhome/services/dist-rollup": "dist-rollup/bo-robxdjfront/searchhome/services",
-              "projects/bo-robxdjfront/src/app/searchhomequeryresult/i18n": "dist-rollup/bo-robxdjfront/searchhomequeryresult/i18n",
-              "projects/bo-robxdjfront/src/app/searchhomequeryresult/expressions": "dist-rollup/bo-robxdjfront/searchhomequeryresult/expressions",
-              "projects/bo-robxdjfront/src/app/searchhomequeryresult/metadata": "dist-rollup/bo-robxdjfront/searchhomequeryresult",
-              "projects/bo-robxdjfront/src/app/searchhomequeryresult/services/dist-rollup": "dist-rollup/bo-robxdjfront/searchhomequeryresult/services",
-              "projects/bo-robxdjfront/src/app/searchresult/i18n": "dist-rollup/bo-robxdjfront/searchresult/i18n",
-              "projects/bo-robxdjfront/src/app/searchresult/expressions": "dist-rollup/bo-robxdjfront/searchresult/expressions",
-              "projects/bo-robxdjfront/src/app/searchresult/metadata": "dist-rollup/bo-robxdjfront/searchresult",
-              "projects/bo-robxdjfront/src/app/searchresult/services/dist-rollup": "dist-rollup/bo-robxdjfront/searchresult/services"
+              "projects/bo-test-front/src/app/testcardform/i18n": "dist-rollup/bo-test-front/testcardform/i18n",
+              "projects/bo-test-front/src/app/testcardform/expressions": "dist-rollup/bo-test-front/testcardform/expressions",
+              "projects/bo-test-front/src/app/testcardform/metadata": "dist-rollup/bo-test-front/testcardform",
+              "projects/bo-test-front/src/app/testcardform/services/dist-rollup": "dist-rollup/bo-test-front/testcardform/services",
+              "projects/bo-test-front/src/app/list/i18n": "dist-rollup/bo-test-front/list/i18n",
+              "projects/bo-test-front/src/app/list/expressions": "dist-rollup/bo-test-front/list/expressions",
+              "projects/bo-test-front/src/app/list/metadata": "dist-rollup/bo-test-front/list",
+              "projects/bo-test-front/src/app/list/services/dist-rollup": "dist-rollup/bo-test-front/list/services"
             }
           },
           "configurations": {
             "production": {
-              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1648028935963",
+              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1677050505982",
               "optimization": false,
               "buildOptimizer": false,
               "outputHashing": "none",
@@ -160,11 +97,11 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "bo-robxdjfront:build"
+            "browserTarget": "bo-test-front:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "bo-robxdjfront:build:production"
+              "browserTarget": "bo-test-front:build:production"
             },
             "ci": {
               "importmap": "/platform/runtime/common/web/runtime.common.manifest.json",
@@ -188,5 +125,5 @@
       }
     }
   },
-  "defaultProject": "bo-robxdjfront"
+  "defaultProject": "bo-test-front"
 }
